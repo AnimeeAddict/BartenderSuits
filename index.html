@@ -8,29 +8,43 @@
     <title>Outfits fit for Bartenders</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-</head>
-
-<body>
     <script>
-        module.exports = {
+        tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        'paris': ['Parisienne']
+                        paris: ['Parisienne'],
+                        telex: ['Telex'],
+                        enri: ['Enriqueta'],
                     },
-                },
+                    colors: {
+                        'grayish-blue': '#738FA7',
+                        'light-grayish-blue': '#C3CEDA',
+                        'really-dark-blue': '#071330',
+                        'blue-blue': '#0C4160',
+                    },
+                }
             }
         }
     </script>
-    <section class="font-paris">
-        <h2 class="text-center text-4xl">Oufit fit for</h2>
-        <h1 class="text-center text-7xl">Bartenders</h1>
-    </section>
-    
-    <div></div>
+</head>
+
+<body class="bg-light-grayish-blue bg-gradient-to-b from-grayish-blue h-screen w-screen text-center">
+    <script>
+
+    </script>
+    <div class="font-paris flex flex-col">
+        <div class="m-36">
+            <h2 class="text-5xl text-really-dark-blue">Oufit fit for</h2>
+            <h1 class="text-9xl text-really-dark-blue">Bartenders</h1>
+        </div>
+
+        <a href="suitBrands.html" class="p-10 text-3xl bg-light-grayish-blue w-1/4 rounded self-center border-4 border-blue-blue font-telex text-blue-blue hover:bg-blue-blue hover:text-light-grayish-blue transition duration-500 ease-in-out"><div>
+            <h2 class="">Find Your Fit!</h2>
+        </div>
+        </a>
+    </div>
+
 </body>
 
 </html>
